@@ -29,8 +29,7 @@ export function phonelogin (params) {
 export function groupdel (params) {
   return request({
     url: '/group',
-    method: 'delete',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8' },
+    method: 'del',
     params
   })
 }
@@ -39,7 +38,6 @@ export function groupput (params) {
   return request({
     url: '/group',
     method: 'put',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8' },
     params
   })
 }
@@ -47,8 +45,8 @@ export function groupput (params) {
 export function groupadd (params) {
   return request({
     url: '/group',
+    headers: { 'Content-Type': 'multipart/form-data' },
     method: 'post',
-    headers: { 'Content-Type': 'multipart/form-data' },
     data: params
   })
 }
@@ -64,6 +62,7 @@ export function grouplook (params) {
 export function userput (params) {
   return request({
     url: '/user',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8' },
     method: 'put',
     params
   })
@@ -72,8 +71,9 @@ export function userput (params) {
 export function useradd (params) {
   return request({
     url: '/user',
+    headers: { 'Content-Type': 'multipart/form-data' },
     method: 'post',
-    params
+    data: params
   })
 }
 // 删除子用户信息
@@ -85,19 +85,20 @@ export function userdel (params) {
   })
 }
 // 查看子用户信息
-export function userlook () {
+export function userlook (params) {
   return request({
     url: '/user',
-    method: 'get'
+    method: 'get',
+    params
   })
 }
 // 用户修改密码
 export function userpassword (params) {
   return request({
     url: '/userpassword',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8' },
     method: 'put',
-    params,
-    headers: { 'Content-Type': 'x-www-form-urlencoded' }
+    params
   })
 }
 // 用户登录接口
@@ -139,15 +140,6 @@ export function dev (params) {
   return request({
     url: '/dev',
     method: 'post',
-    params
-  })
-}
-
-// 实时数据预览
-export function ssdata_view(params){
-  return request({
-    url: '/currentRecord',
-    method: 'get',
     params
   })
 }

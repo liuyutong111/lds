@@ -96,75 +96,11 @@
             label="操作"
             width="100">
             <template slot-scope="scope">
-              <el-button @click="handleClick(scope.row,dialogFormVisible)" type="text" size="small"><i class="el-icon-view" style="font-size:20px;"></i></el-button>
-              <el-button type="text" size="small" @click="open"><i class="el-icon-delete" style="font-size:20px;"></i></el-button>
+              <el-button @click="handleClick(scope.row)" type="text" size="small">预览</el-button>
+              <el-button type="text" size="small" @click="open">删除</el-button>
             </template>
           </el-table-column>
         </el-table>
-        <div class="bj_tankuangs">
-          <el-dialog title="预览" :visible.sync="dialogFormVisible">
-            <el-row>
-              <el-col :span="4">
-                <div class="grid-content bg-purple"></div>
-              </el-col>
-              <el-col :span="12">
-                <div class="grid-content bg-purple-light">
-                  <span class="yulan_titles">设备名称 :</span> 3428352385932852
-                </div>
-              </el-col>
-              <el-col :span="8">
-                <div class="grid-content bg-purple-light"></div>
-              </el-col>
-            </el-row>
-            <el-row>
-              <el-col :span="4">
-                <div class="grid-content bg-purple"></div>
-              </el-col>
-              <el-col :span="12">
-                <div class="grid-content bg-purple-light">设备线路: 短信</div>
-              </el-col>
-              <el-col :span="8">
-                <div class="grid-content bg-purple-light"></div>
-              </el-col>
-            </el-row>
-            <el-row>
-              <el-col :span="4">
-                <div class="grid-content bg-purple"></div>
-              </el-col>
-              <el-col :span="12">
-                <div class="grid-content bg-purple-light">所属区域: 温度大于20摄氏度</div>
-              </el-col>
-              <el-col :span="8">
-                <div class="grid-content bg-purple-light"></div>
-              </el-col>
-            </el-row>
-            <el-row>
-              <el-col :span="4">
-                <div class="grid-content bg-purple"></div>
-              </el-col>
-              <el-col :span="12">
-                <div class="grid-content bg-purple-light">当前值:未处理</div>
-              </el-col>
-              <el-col :span="8">
-                <div class="grid-content bg-purple-light"></div>
-              </el-col>
-            </el-row>
-            <el-row>
-              <el-col :span="4">
-                <div class="grid-content bg-purple"></div>
-              </el-col>
-              <el-col :span="12">
-                <div class="grid-content bg-purple-light">状态更新时间: 3428352385932852</div>
-              </el-col>
-              <el-col :span="8">
-                <div class="grid-content bg-purple-light"></div>
-              </el-col>
-            </el-row>
-            <div slot="footer" class="dialog-footer">
-              <el-button type="primary" @click="dialog()">保存</el-button>
-            </div>
-          </el-dialog>
-        </div>
         <div class="block">
           <el-pagination
             @size-change="handleSizeChange"
@@ -188,7 +124,6 @@ export default {
   name: 'sjanalysis',
   data () {
     return {
-      dialogFormVisible: false,
       time:'请选择日期',
       currentPage4: 4,
       options: [{
@@ -243,13 +178,8 @@ export default {
     handleSelectionChange (val) {
       this.multipleSelection = val
     },
-    handleClick (row,dialogFormVisible) {
+    handleClick (row) {
       console.log(row)
-      this.dialogFormVisible = true;
-    },
-    dialog() {
-      this.dialogFormVisible = false;
-      console.log(this.form.name);
     },
     // 格式化日期和时间
     selectTime(ev){
@@ -339,6 +269,7 @@ export default {
     position: absolute;
     top: 0;
     color: #2dfffe;
+    background: rgb(235,241,246);
     background-image: url('./sjanalysis_img/search.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;

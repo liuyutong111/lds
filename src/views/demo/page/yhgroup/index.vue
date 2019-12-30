@@ -385,9 +385,7 @@ export default {
 .el-select .el-input {
   border: 0px;
 }
-.bj_container {
-  margin-top: 36px;
-}
+
 // 添加用户
 .user_tj .grid-content {
   color: #fff;
@@ -399,6 +397,11 @@ export default {
 }
 .user_tj .el-select {
   width: 100%;
+}
+.bj_container .user_tj .el-dialog{
+   background-image: url(../../../images/tu/tankuang.png);
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
 }
 .user_tj .el-button--primary:focus,
 .bijl_head .el-button--primary:hover {
@@ -418,4 +421,5 @@ export default {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+
 </style>

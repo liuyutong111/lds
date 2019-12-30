@@ -142,7 +142,7 @@
                 <input type="text" v-model="input" class="defind" placeholder="最大长度为18个字符或6个汉字">
               </el-form-item>
               <el-form-item label="" :label-width="formLabelWidth">
-                <input type="text" v-model="input" class="defind" placeholder="百度地图" style="height:200px;">
+                <input type="text" v-model="input" class="defind" placeholder="百度地图" style="height:200px;background:#fff;">
               </el-form-item>
             </el-form>
             <div slot="footer" class="dialog-footer">
@@ -320,18 +320,12 @@ export default {
   .s_right_d>button{
     width: 46%;
     margin-left: 1%;
-    background-color: transparent;  
+    background: #ebf1f6;
     background-image: url('./sblist_img/bjlist_botton.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     color: #fff;
     border: none;
-  }
-  .s_right_d .el-button:focus, .s_right_d .el-button:hover{
-    background-color: transparent;  
-    background-image: url('./sblist_img/bjlist_botton.png');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
   }
   .add_tk .el-dialog{
     background-image: url('./sblist_img/tk.png');
@@ -369,7 +363,7 @@ export default {
     color: #2dfffe;
   }
   .defind{
-    background-color: transparent;  
+    background: rgb(237,237,237);
     width: 100%;
     height: 40px;
     outline: none;

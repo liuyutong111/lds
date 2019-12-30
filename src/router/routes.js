@@ -104,6 +104,24 @@ const frameIn = [
         component: _import('demo/page/tjgroup')
       },
       {
+        path: 'bm',
+        name: '部门', 
+        meta: {
+          title: '部门',
+          auth: true
+        },
+        component: _import('demo/page/tjgroup/bm.vue')
+      },
+      {
+        path: 'xgroup',
+        name: '小组', 
+        meta: {
+          title: '小组',
+          auth: true
+        },
+        component: _import('demo/page/tjgroup/xz.vue')
+      },
+      {
         path: 'sblist',
         name: '设备列表',
         meta: {

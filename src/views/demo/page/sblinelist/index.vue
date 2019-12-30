@@ -39,7 +39,7 @@
                   </el-select>
                 </el-form-item>
                 <el-form-item label="" :label-width="formLabelWidth">
-                  <input type="text" v-model="input" class="defind" placeholder="百度地图" style="height:200px;background-color: transparent;">
+                  <input type="text" v-model="input" class="defind" placeholder="百度地图" style="height:200px;background:#fff;">
                 </el-form-item>
               </el-form>
               <div slot="footer" class="dialog-footer">
