@@ -1,0 +1,34 @@
+{
+	"_element": "en",
+	"_name": "English",
+	"page1": "page1",
+	"login":"login",
+	"Intelligent monitoring clip": "Intelligent monitoring clip",
+	"registered": "registered",
+	"Sign in with an existing account":"Sign in with an existing account",
+	"Send the verification code":"Send code",
+	"Enter confirmation code":"Enter confirmation code",
+	"11-digit mobile phone number":"11-digit mobile phone number",
+	"confirm password":"confirm password",
+	"password":"password",
+	"mailbox":"mailbox",
+	"username":"username",
+	"views": {
+		"system": {
+			"error": {
+				"404": {
+					"back": "Back to home"
+				}
+			}
+		}
+	},
+	"page": {
+		"demo": {
+			"playground": {
+				"locales": {
+					"text": "D2Admin is a fully open source and free enterprise back-end product front-end integration solution, using the latest front-end technology stack, has prepared most of the project preparations, and with a lot of sample code to help the management system agile development."
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,34 @@
+{
+	"_element": "zh-CN",
+	"_name": "简体中文",
+	"page1": "页面1",
+	"login": "登录",
+	"Intelligent monitoring clip": "智能监测线夹",
+	"registered":"注册",
+	"Sign in with an existing account":"使用已有账号登录",
+	"Send the verification code":"发送验证码",
+	"Enter confirmation code":"输入验证码",
+	"11-digit mobile phone number":"11位手机号",
+	"confirm password":"确认密码",
+	"password":"密码",
+	"mailbox":"邮箱",
+	"username":"用户名",
+	"views": {
+		"system": {
+			"error": {
+				"404": {
+					"back": "返回首页"
+				}
+			}
+		}
+	},
+	"page": {
+		"demo": {
+			"playground": {
+				"locales": {
+					"text": "D2Admin 是一个完全 开源免费 的企业中后台产品前端集成方案，使用最新的前端技术栈，已经做好大部分项目前期准备工作，并且带有大量示例代码，助力管理系统敏捷开发。"
+				}
+			}
+		}
+	}
+}
